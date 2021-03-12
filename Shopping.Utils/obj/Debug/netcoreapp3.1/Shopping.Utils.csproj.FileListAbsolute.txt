@@ -1,0 +1,12 @@
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\bin\Debug\netcoreapp3.1\Shopping.Utils.deps.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\bin\Debug\netcoreapp3.1\Shopping.Utils.runtimeconfig.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\bin\Debug\netcoreapp3.1\Shopping.Utils.runtimeconfig.dev.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\bin\Debug\netcoreapp3.1\Shopping.Utils.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\bin\Debug\netcoreapp3.1\Shopping.Utils.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.csprojAssemblyReference.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.AssemblyInfoInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.AssemblyInfo.cs
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.csproj.CoreCompileInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Utils\obj\Debug\netcoreapp3.1\Shopping.Utils.genruntimeconfig.cache
