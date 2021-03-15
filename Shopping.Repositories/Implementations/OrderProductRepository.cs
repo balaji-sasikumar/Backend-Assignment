@@ -27,9 +27,18 @@ namespace Shopping.Repositories.Implementations
         }
         public async Task<OrderProduct> PlaceOrder(OrderProduct Order)
         {
-            var result =_shoppingContext.OrderProducts.Add(Order);
-            await _shoppingContext.SaveChangesAsync();
-            return Order;
+            var product = await _shoppingContext.Products.FindAsync(Order.ProductId);
+            if (Order.Quantity<=product.AvailableQuantity)
+            {
+                var result = _shoppingContext.OrderProducts.Add(Order);
+                var remainingQuantity = product.AvailableQuantity- Order.Quantity ;
+                product.AvailableQuantity = remainingQuantity;
+                await _shoppingContext.SaveChangesAsync();
+                return Order;
+
+            }
+            return null;
+
         }
 
         public async Task DeleteOrder(OrderProduct Order)

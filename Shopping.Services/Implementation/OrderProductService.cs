@@ -41,17 +41,11 @@ namespace Shopping.Services.Implementation
             };
 
             var result= await _orderProductRepository.PlaceOrder(productEntity);
+
+
             return result;
         }
 
-        //public async Task UpdateOrderDetail(Guid id,OrderProductViewModel order)
-        //{
-        //    OrderProduct oldOrder = await _orderProductRepository.GetOrderDetail(id);
-        //    oldOrder.Quantity = order.Quantity;
-        //    oldOrder.DeliveredDate = order.DeliveredDate;
-        //    await _orderProductRepository.UpdateOrderDetail(oldOrder);
-
-        //}
         public async  Task DeleteOrder(Guid id)
         {
             OrderProduct oldOrder = await _orderProductRepository.GetOrderDetail(id);

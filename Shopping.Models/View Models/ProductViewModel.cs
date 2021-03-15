@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Shopping.Models.View_Models
+﻿namespace Shopping.Models.View_Models
 {
    public class ProductViewModel
     {

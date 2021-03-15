@@ -43,6 +43,10 @@ namespace Shopping.API.Controllers
         public async Task<IActionResult> Post([FromBody] OrderProductViewModel order)
         {
             var newOrder = await _orderProductService.PlaceOrder(order);
+            if (newOrder == null)
+            {
+                return NotFound("Order not Placed");
+            }
             return Ok();
         }
 
