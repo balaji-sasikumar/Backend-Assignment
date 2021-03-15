@@ -20,13 +20,21 @@ namespace Shopping.Services.Implementation
 
         public async Task<OrderProduct> GetOrderDetail(Guid id)
         {
-            return await _orderProductRepository.GetOrderDetail(id);
+            var result = await _orderProductRepository.GetOrderDetail(id);
+            if (result == null)
+                return null;
+            
+            return result;
 
         }
 
         public async Task<IEnumerable<OrderProduct>> GetOrderDetails()
         {
-            return await _orderProductRepository.GetOrderDetails();
+            var result = await _orderProductRepository.GetOrderDetails();
+            if (result == null)
+                return null;
+
+            return result;
         }
 
         public async Task<OrderProduct> PlaceOrder(OrderProductViewModel order)
@@ -34,15 +42,16 @@ namespace Shopping.Services.Implementation
             var productEntity = new OrderProduct()
             {
                 Quantity = order.Quantity,
-                DeliveredDate = order.DeliveredDate,
                 InvoiceDate = DateTime.UtcNow,
+                DeliveredDate = DateTime.UtcNow.AddDays(2),
                 CustomerId =Guid.Parse("15154833-940f-4c5c-a507-f3ec0d23c3ee"),
                 ProductId=order.ProductId,
             };
 
             var result= await _orderProductRepository.PlaceOrder(productEntity);
 
-
+            if (result == null)
+                return null;
             return result;
         }
 

@@ -15,6 +15,7 @@ namespace Shopping.Repositories.EntityModels
 
         [ForeignKey(nameof(ProductId))]
         public virtual Product Product { get; set; }
+        [Required]
         public int Quantity { get; set;}
         public DateTime InvoiceDate { get; set; }
 

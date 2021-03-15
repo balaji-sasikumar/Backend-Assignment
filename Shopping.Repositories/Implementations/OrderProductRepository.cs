@@ -17,12 +17,18 @@ namespace Shopping.Repositories.Implementations
         }
         public async Task<IEnumerable<OrderProduct>> GetOrderDetails()
         {
-            var result = await _shoppingContext.OrderProducts.Include(x => x.Product).ToListAsync();
+            var result = await _shoppingContext.OrderProducts.Include(obj => obj.Product).ToListAsync();
+            if (result == null)
+                return null;
             return result;
         }
         public async Task<OrderProduct> GetOrderDetail(Guid id)
         {
-            return await _shoppingContext.OrderProducts.FindAsync(id);
+            var result= await _shoppingContext.OrderProducts.FindAsync(id);
+            if (result == null)
+                return null;
+            
+            return result;
 
         }
         public async Task<OrderProduct> PlaceOrder(OrderProduct Order)
@@ -31,8 +37,7 @@ namespace Shopping.Repositories.Implementations
             if (Order.Quantity<=product.AvailableQuantity)
             {
                 var result = _shoppingContext.OrderProducts.Add(Order);
-                var remainingQuantity = product.AvailableQuantity- Order.Quantity ;
-                product.AvailableQuantity = remainingQuantity;
+                product.AvailableQuantity -= Order.Quantity ;
                 await _shoppingContext.SaveChangesAsync();
                 return Order;
 

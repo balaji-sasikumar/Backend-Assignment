@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,7 +30,12 @@ namespace Shopping.API
             services.AddScoped<IOrderProductService, OrderProductService>();
             services.AddScoped<IOrderProductRepository, OrderProductRepository>();
             services.AddSwaggerGen();
-
+            services.AddCors();
+            //services.AddMvc();
+            //services.AddCors(allowsites => {
+            //    allowsites.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            //});
+            //MvcOptions.EnableEndpointRouting = false;
 
             services.AddDbContext<ShoppingContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:ShoppingDB"]));
             services.AddControllers();
@@ -54,6 +60,15 @@ namespace Shopping.API
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 c.RoutePrefix = string.Empty;
             });
+
+            app.UseCors(builder => builder
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .SetIsOriginAllowed((host) => true)
+                .AllowCredentials()
+            );
+            //app.UseMvc();
+            //app.UseCors(options => options.AllowAnyOrigin());
 
             app.UseRouting();
 

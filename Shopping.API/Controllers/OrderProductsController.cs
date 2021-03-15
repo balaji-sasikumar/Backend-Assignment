@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Shopping.Models.View_Models;
 using Shopping.Services.Interface;
 using System;
@@ -9,6 +10,7 @@ namespace Shopping.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[EnableCors("AllowOrigin")]
     public class OrderProductsController : ControllerBase
     {
         private readonly IOrderProductService _orderProductService;
@@ -23,6 +25,10 @@ namespace Shopping.API.Controllers
         public async Task<IActionResult> Get()
         {
             var result = await _orderProductService.GetOrderDetails();
+            if (result == null)
+            {
+                return NotFound("Cart Empty");
+            }
             return Ok(result);
         }
 

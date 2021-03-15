@@ -41,8 +41,11 @@ namespace Shopping.Services.Implementation
         {
            
             Product product = await _productRepository.GetProduct(id);
-            await _productRepository.DeleteProduct(product);
-            
+            if (product != null)
+            {
+                await _productRepository.DeleteProduct(product);
+            }
+
 
         }
 
@@ -50,10 +53,14 @@ namespace Shopping.Services.Implementation
         public async Task UpdateProduct(Guid id, ProductViewModel product)
         {
             Product oldProduct= await _productRepository.GetProduct(id);
-            oldProduct.ProductName = product.ProductName;
-            oldProduct.AvailableQuantity = product.AvailableQuantity;
-            oldProduct.Price = product.Price;
-            oldProduct.Date = DateTime.UtcNow;
+            if (oldProduct != null)
+            {
+                oldProduct.ProductName = product.ProductName;
+                oldProduct.AvailableQuantity = product.AvailableQuantity;
+                oldProduct.Price = product.Price;
+                oldProduct.Date = DateTime.UtcNow;
+            }
+            
             await _productRepository.UpdateProduct(oldProduct);
         }
     }
