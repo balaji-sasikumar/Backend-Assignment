@@ -1,0 +1,17 @@
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Services.deps.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Services.runtimeconfig.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Services.runtimeconfig.dev.json
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Services.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Services.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Models.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Repositories.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Models.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\bin\Release\netcoreapp3.1\Shopping.Repositories.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.csprojAssemblyReference.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.AssemblyInfoInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.AssemblyInfo.cs
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.csproj.CoreCompileInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.csproj.CopyComplete
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.Services\obj\Release\netcoreapp3.1\Shopping.Services.genruntimeconfig.cache

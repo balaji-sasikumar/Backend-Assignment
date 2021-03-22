@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,13 +30,9 @@ namespace Shopping.API
             services.AddScoped<IOrderProductRepository, OrderProductRepository>();
             services.AddSwaggerGen();
             services.AddCors();
-            //services.AddMvc();
-            //services.AddCors(allowsites => {
-            //    allowsites.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            //});
-            //MvcOptions.EnableEndpointRouting = false;
-
             services.AddDbContext<ShoppingContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:ShoppingDB"]));
+            //services.AddDbContext<ShoppingContext>(opts => 
+            //opts.UseSqlServer(Configuration["ConnectionString:ShoppingDB"], sql => sql.MigrationsAssembly("Shopping.Repositories")));
             services.AddControllers();
         }
 
@@ -52,6 +47,12 @@ namespace Shopping.API
             {
                 c.SerializeAsV2 = true;
             });
+
+            using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetRequiredService<ShoppingContext>().Database.Migrate();
+            }
+
             app.UseHttpsRedirection();
 
             app.UseSwagger();
@@ -67,9 +68,6 @@ namespace Shopping.API
                 .SetIsOriginAllowed((host) => true)
                 .AllowCredentials()
             );
-            //app.UseMvc();
-            //app.UseCors(options => options.AllowAnyOrigin());
-
             app.UseRouting();
 
             app.UseAuthorization();

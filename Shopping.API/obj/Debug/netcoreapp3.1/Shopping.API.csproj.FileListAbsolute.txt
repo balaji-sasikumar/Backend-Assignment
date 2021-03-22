@@ -1,8 +1,3 @@
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.csprojAssemblyReference.cache
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.AssemblyInfoInputs.cache
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.AssemblyInfo.cs
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.csproj.CoreCompileInputs.cache
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.API.exe
@@ -36,7 +31,11 @@ C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Micros
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
@@ -57,6 +56,12 @@ C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shoppi
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.Models.pdb
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.Repositories.pdb
 C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.Services.pdb
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.csprojAssemblyReference.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.AssemblyInfoInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.AssemblyInfo.cs
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.csproj.CoreCompileInputs.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\staticwebassets\Shopping.API.StaticWebAssets.Manifest.cache
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\staticwebassets\Shopping.API.StaticWebAssets.xml
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\scopedcss\bundle\Shopping.API.styles.css
@@ -65,8 +70,3 @@ C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shoppi
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.pdb
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.genruntimeconfig.cache
-C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cs
