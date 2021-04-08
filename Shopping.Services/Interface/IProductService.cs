@@ -30,13 +30,13 @@ namespace Shopping.Services.Interface
         /// </summary>
         /// <param name="id"></param>
         /// <param name="product"></param>
-        /// <returns></returns>
-        Task UpdateProduct(Guid id, ProductViewModel product);
+        /// <returns>True if Updated</returns>
+        Task<bool> UpdateProduct(Guid id, ProductViewModel product);
         /// <summary>
         /// This method is for removing a product
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
-        Task DeleteProduct(Guid id);
+        /// <returns>True if Deleted</returns>
+        Task<bool> DeleteProduct(Guid id);
     }
 }

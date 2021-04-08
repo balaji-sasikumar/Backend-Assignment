@@ -19,7 +19,7 @@ namespace Shopping.Repositories.Implementations
         public async Task<IEnumerable<Product>> GetProducts()
         {
             return await _shoppingContext.Products.ToListAsync();
-           
+
         }
         public async Task<Product> GetProduct(Guid id)
         {
@@ -29,7 +29,6 @@ namespace Shopping.Repositories.Implementations
         {
             _shoppingContext.Products.Add(product);
             await _shoppingContext.SaveChangesAsync();
-            
             return product;
         }
         

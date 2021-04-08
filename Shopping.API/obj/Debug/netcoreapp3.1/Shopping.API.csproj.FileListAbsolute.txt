@@ -70,3 +70,7 @@ C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shoppi
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.dll
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.pdb
 C:\Users\balaj\source\repos\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.genruntimeconfig.cache
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\xunit.assert.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\xunit.core.dll
+C:\Users\balaj\source\repos\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll

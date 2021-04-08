@@ -27,41 +27,48 @@ namespace Shopping.Services.Implementation
         }
         public async Task<Product> AddProduct(ProductViewModel product)
         {
+            if(product.ProductName == null) {
+                throw new Exception("Product Name is Empty");
+            }
             var productEntity = new Product() { 
                 ProductName=product.ProductName,
                 AvailableQuantity=product.AvailableQuantity,
                 Date =DateTime.UtcNow,
                 Price=product.Price
-            };            
+            };
 
             return await _productRepository.AddProduct(productEntity);
         }
 
-        public async Task DeleteProduct(Guid id)
+        public async Task<bool> DeleteProduct(Guid id)
         {
            
             Product product = await _productRepository.GetProduct(id);
-            if (product != null)
+            if (product == null)
             {
-                await _productRepository.DeleteProduct(product);
+                throw new Exception("Invalid Product ID");
             }
-
-
+            await _productRepository.DeleteProduct(product);
+            return true;
+            
         }
 
 
-        public async Task UpdateProduct(Guid id, ProductViewModel product)
+        public async Task<bool> UpdateProduct(Guid id, ProductViewModel product)
         {
-            Product oldProduct= await _productRepository.GetProduct(id);
-            if (oldProduct != null)
+            if (product.ProductName == null)
             {
-                oldProduct.ProductName = product.ProductName;
-                oldProduct.AvailableQuantity = product.AvailableQuantity;
-                oldProduct.Price = product.Price;
-                oldProduct.Date = DateTime.UtcNow;
+                throw new Exception("Product Name is Empty");
             }
-            
+            Product oldProduct= await _productRepository.GetProduct(id);
+            if (oldProduct == null) throw new Exception("Invalid Product ID");      
+            oldProduct.ProductName = product.ProductName;
+            oldProduct.AvailableQuantity = product.AvailableQuantity;
+            oldProduct.Price = product.Price;
+            oldProduct.Date = DateTime.UtcNow;
+
             await _productRepository.UpdateProduct(oldProduct);
+            return true;
         }
     }
 }

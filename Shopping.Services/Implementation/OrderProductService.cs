@@ -39,6 +39,7 @@ namespace Shopping.Services.Implementation
 
         public async Task<OrderProduct> PlaceOrder(OrderProductViewModel order)
         {
+            if (order.ProductId == Guid.Empty) throw new Exception("Product Id is empty");
             var productEntity = new OrderProduct()
             {
                 Quantity = order.Quantity,
@@ -55,11 +56,12 @@ namespace Shopping.Services.Implementation
             return result;
         }
 
-        public async  Task DeleteOrder(Guid id)
+        public async  Task<bool> DeleteOrder(Guid id)
         {
-            OrderProduct oldOrder = await _orderProductRepository.GetOrderDetail(id);
-
-            await _orderProductRepository.DeleteOrder(oldOrder);
+            OrderProduct order = await _orderProductRepository.GetOrderDetail(id);
+            if (order == null) throw new Exception("Order Not Exists");
+            await _orderProductRepository.DeleteOrder(order);
+            return true;
         }
     }
 }

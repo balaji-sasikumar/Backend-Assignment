@@ -31,6 +31,6 @@ namespace Shopping.Services.Interface
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task DeleteOrder(Guid id);
+        Task<bool> DeleteOrder(Guid id);
     }
 }

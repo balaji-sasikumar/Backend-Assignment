@@ -17,18 +17,13 @@ namespace Shopping.Repositories.Implementations
         }
         public async Task<IEnumerable<OrderProduct>> GetOrderDetails()
         {
-            var result = await _shoppingContext.OrderProducts.Include(obj => obj.Product).ToListAsync();
-            if (result == null)
-                return null;
-            return result;
+            return await _shoppingContext.OrderProducts.Include(obj => obj.Product).ToListAsync();
+   
         }
         public async Task<OrderProduct> GetOrderDetail(Guid id)
         {
-            var result= await _shoppingContext.OrderProducts.FindAsync(id);
-            if (result == null)
-                return null;
+            return await _shoppingContext.OrderProducts.FindAsync(id);
             
-            return result;
 
         }
         public async Task<OrderProduct> PlaceOrder(OrderProduct Order)
